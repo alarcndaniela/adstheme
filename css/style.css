@@ -274,4 +274,19 @@ h2 {}
     .contact-btn{
         font-size: 1em;
     }
+    .contact {
+        width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+        box-shadow: 0px 0px 0px 0px
+    }
+
+    .other {
+        width: 100%;
+        padding: 20px 0
+    }
+
+    .form {
+        width: 100%
+    }
 }
