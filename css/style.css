@@ -1,0 +1,277 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+body, html{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+/********************************************************HEADER**********************************************************/
+
+.header{
+    background-color: #7C4DF0;
+    width: 100%;
+}
+
+
+/********************************************************LANDING*********************************************************/
+
+.landing{
+    height: 70vh;
+    width: 100%;
+    background-color: white;
+    background-image: url('/img/iphone_mocku.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: cover;
+    align-self: center; */
+}
+
+.tint{
+    position: absolute; 
+    z-index: 1;
+    height: 70vh;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s
+}
+
+.content-details {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    z-index: 100;
+}
+
+.content-details h3 {
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.content-details p {
+	font-weight: 300;
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.contact-btn:hover{
+    background-color: #FFD323;
+    color: #121212;
+}
+
+/********************************************************RECENT PROJECTS*********************************************************/
+.recent-projects{
+    width: 100%;
+    color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: cover;
+    align-self: center; */
+
+}
+
+.card{
+    background-color: black;
+    -webkit-box-shadow: 0px 10px 25px -3px rgba(28,28,28,1);
+    -moz-box-shadow: 0px 10px 25px -3px rgba(28,28,28,1);
+    box-shadow: 0px 10px 25px -3px rgba(28,28,28,1);
+}
+
+/********************************************************PROJECTS*********************************************************/
+
+.card-mansonry{
+    border-color:#7C4DF0
+}
+/********************************************************CONTACT*********************************************************/
+
+.contact {
+    display: flex;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.28);
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.other {
+    width: 60%;
+    background:rgb(255, 211, 35);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.form {
+    width: 40%; 
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+.form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: 700;
+    color:black;
+}
+
+.form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+.flex-rev {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%
+}
+
+.flex-rev input,
+.flex-rev textarea {
+    border: none;
+    background-color: #e6e6e6;
+    padding: 12px 10px;
+    font-size: 16px;
+    resize: none;
+    border-radius: 5px;
+    color: #243342;
+    outline-color: #243342;
+    outline-width: thin;
+    -webkit-appearance: none
+}
+
+.flex-rev textarea {
+    height: 150px
+}
+
+button {
+    -webkit-appearance: none;
+    margin-right: 0
+}
+
+.info {
+    position: relative;
+    padding: 20px
+}
+
+h2 {}
+
+.info h2 {
+    color: #121212;
+    font-size: 1.5em;
+}
+
+.info h3 {
+    color: #121212;
+}
+.svg-wrap {
+    display: flex;
+    margin-top: 14px
+}
+
+.svg-wrap a {
+    border: 0;
+    padding: 0;
+    display: flex;
+    color: #121212;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic
+}
+
+.svg-wrap a svg {
+    width: 20px;
+    height: 20px;
+    fill: #121212;
+    transition: fill 0.2s ease-in-out;
+    margin-right: 13px
+}
+
+.svg-wrap a:hover svg {
+    fill: #7C4DF0;
+    cursor: pointer
+}
+
+.svg-wrap a:hover {
+    background-color: transparent;
+    color: #7C4DF0;
+    cursor: pointer
+}
+
+.form-button {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1D84D9;
+    font-weight: 300 !important;
+    color: white;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 500;;
+    margin-right: 20px;
+    transition: 0.15s ease-in-out
+}
+
+.form-button:hover {
+    background-color: #FFD323;
+    color: #121212;
+}
+
+/********************************************************BUTTONS STYLES**********************************************************/
+
+.btn-menu{
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-btn{
+    font-family: 'Raleway', sans-serif;
+    background-color: #1D84D9;
+    font-weight: 300;
+    color: white;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+
+/*******************************************************RESPONSIVE**************************************************************/
+
+@media screen and (max-width: 990px) {
+    .container-fluid{
+        position: relative;
+        margin-top: -0.5rem;
+    }
+
+    .landing .tint{
+        height: 40vh;
+    }
+
+    .content-details h3 {
+        font-size: 1.8em;
+    }
+    
+    .content-details p {
+        font-size: 1em;
+    }
+    .contact-btn{
+        font-size: 1em;
+    }
+}
